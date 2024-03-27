@@ -10,24 +10,28 @@ int main () {
 
     printf("Введіть значення c = ");
     scanf("%d", &c);
-
+    if (b == 0){
+    printf("Не можна ділити на 0!");
+    }
+    else {
     if ( c == 4 )
     {
         a = pow (b, 2) + 2 * sqrt ( c );
+        printf("a=%.2f", a);
     }
     
     else if (c == 0)
     {
         a = b / (c - b);
+        printf("a=%.2f", a);
     }
     else if (c == -5)
     {
         a = b + 12 * pow (c , 4);
+        printf("a=%.2f", a);
     }
     else {
         printf("Це не можливо!");
     }
-    printf("a=%.2f", a);
-
-    return 0;
-}
+    
+    }
