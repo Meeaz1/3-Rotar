@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int d1, d2, d3, d4, sum;
+
+    printf("Введіть дійсне число:");
+    scanf("%d", &d1);
+
+    printf("Введіть дійсне число:");
+    scanf("%d", &d2);
+
+    printf("Введіть дійсне число:");
+    scanf("%d", &d3);
+
+    printf("Введіть дійсне число:");
+    scanf("%d", &d4);
+
+    sum = d1 + d2 + d3 + d4;
+
+    if (sum < 20) {
+        printf("Сума = %d Сума меньше за 20", sum);
+    } else {
+        printf("Сума = %d Сума більше за 20", sum);
+    }
+
+    return 0;
+}
