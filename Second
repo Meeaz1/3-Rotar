@@ -19,7 +19,8 @@ int main() {
 
     if (sum < 20) {
         printf("Сума = %d Сума меньше за 20", sum);
-    } else {
+    } else if (sum == 20){printf("Сума = %d Сума рівна 20", sum);}
+    else {
         printf("Сума = %d Сума більше за 20", sum);
     }
 
