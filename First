@@ -10,14 +10,11 @@ int main () {
 
     printf("Введіть значення c = ");
     scanf("%d", &c);
-
-    if (c == 4) a = pow (b, 2) + 2 * sqrt ( c );
-    if (c == 0) a = b / (c - b);
-    if (c == -5)a = b + 12 * pow (c , 4);
-
-    printf("Значееня A = %.2f", a);
-
+    if (c != 4 && c != 0 && c != -5) printf ("Це не можливо");
+    if (c == 4) a = pow (b, 2) + 2 * sqrt ( c ) , printf("Значееня A = %.2f", a);
+    if (c == 0) a = b / (c - b) , printf("Значееня A = %.2f", a); 
+    if (c == -5)a = b + 12 * pow (c , 4) , printf("Значееня A = %.2f", a); 
+    
     return 0;
     
-
 }
